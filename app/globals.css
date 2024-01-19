@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +8,7 @@
 @layer base {
   :root {
     --background: 40, 30%, 96%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 0, 0%, 16.1%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
@@ -60,6 +62,14 @@
   }
 }
 
-.jost{
-  font-family: var(--font-caveat);
+.h1{
+  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-extrabold;
 }
+
+.subtitle{
+  @apply text-muted-foreground text-base mb-8 font-normal;
+}
+
+
+
+
