@@ -18,7 +18,11 @@ const Header = () => {
   });
   return (
     <header
-      className={`sticky top-0 transition-all`}
+      className={`${
+        header
+          ? "bg-[#F2EDE6]  dark:bg-[#232932]"
+          : "dark:bg-transparent"
+      } sticky top-0 transition-all`}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">

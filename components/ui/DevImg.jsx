@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image'
 
 // components
 
-const DevImg = () => {
+const DevImg = ({containerStyles, imgSrc}) => {
     return (
-        <div>
-            Dev image
+        <div className={`${containerStyles}`}>
+            <Image src={imgSrc} fill priority alt='profile-image'/>
         </div>
     )
 }
