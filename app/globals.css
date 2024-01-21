@@ -46,9 +46,11 @@
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
-    --border: 240 3.7% 15.9%;
+    --border: 240 5.9% 25%;
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
+
+    
   }
 }
 
@@ -69,6 +71,17 @@
 .subtitle{
   @apply text-muted-foreground text-base mb-8 font-normal;
 }
+
+.section-title{
+  @apply text-4xl font-extrabold relative w-max flex items-center justify-between uppercase gap-x-3;
+}
+
+.section-subtitle{
+  @apply text-2xl font-extrabold relative w-max ;
+  
+}
+
+
 
 
 

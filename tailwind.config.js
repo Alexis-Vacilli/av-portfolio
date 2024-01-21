@@ -75,9 +75,8 @@ module.exports = {
         hero: 'url(/assets/bg3.png)',
         hero_shape_light: 'url(/assets/shape-light.png)',
         hero_shape_dark: 'url(/assets/shape-dark.png)',
-        
-
-
+        bg_dot_light: 'url(/assets/eclipse.png)',
+        card_bg_light: 'url(/assets/card-light.png)'
       },
     },
   },

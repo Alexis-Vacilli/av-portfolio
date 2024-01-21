@@ -20,9 +20,9 @@ const Header = () => {
     <header
       className={`${
         header
-          ? "bg-[#F2EDE6]  dark:bg-[#232932]"
+          ? "bg-transparent  dark:bg-transparent]"
           : "dark:bg-transparent"
-      } sticky top-0 transition-all`}
+      } sticky top-0 transition-all z-50`}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
