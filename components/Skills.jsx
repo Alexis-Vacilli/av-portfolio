@@ -51,7 +51,7 @@ const Skills = () => {
       {/* Container */}
       <div className="container mx-auto">
         {/* Tiles */}
-        <div className="mb-12 xl:mb-24">
+        <div className="mb-6 xl:mb-12">
           <h2 className="section-title text-center mx-auto">
             Professional skills
           </h2>
