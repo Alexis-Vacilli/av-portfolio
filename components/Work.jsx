@@ -69,7 +69,7 @@ const Work = () => {
               );
             })}
           </TabsList>
-          <div className='grid grid-cols-3 gap-x-12 gap-y-12'>
+          <div className='grid xl:grid-cols-3 justify-center xl:gap-8'>
               {filteredProjects.map((project, ndex) => {
                   return <TabsContent value={category} key={ndex}>
                       <ProjectCard project={project} />
