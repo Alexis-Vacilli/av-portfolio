@@ -27,13 +27,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
-  {
-    image: "",
-    category: "UI/UX Design",
-    name: "E-Matt",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-  },
+  
 ];
 
 const uniqueCategories = [
