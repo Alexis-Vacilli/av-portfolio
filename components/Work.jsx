@@ -7,27 +7,33 @@ import ProjectCard from "./ProjectCard";
 
 const projectData = [
   {
-    image: "",
+    image: "/assets/Work/ludofle.png",
     category: "Nextjs",
     name: "Ludofle",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
-    image: "",
+    image: "/assets/Work/ludofle.png",
     category: "Javascript",
     name: "Gooir",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
-    image: "",
+    image: "/assets/Work/ludofle.png",
     category: "React Js",
     name: "Khonam",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
-  
+  {
+    image: "/assets/Work/ludofle.png",
+    category: "UI/UX Design",
+    name: "E-Matt",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  },
 ];
 
 const uniqueCategories = [
