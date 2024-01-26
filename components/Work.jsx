@@ -50,8 +50,9 @@ const Work = () => {
   })
 
   return (
-    <section className="py-12 xl:py-24 mb-12 xl:mb-36">
+    <section className="py-12 xl:py-24">
       <div className="container mx-auto">
+        {/* Title */}
         <div className="mb-12 xl:mb-24">
           <h2 className="section-title text-center mx-auto">Latest Projects</h2>
           <p className="section-subtitle text-center secondary-font mx-auto">

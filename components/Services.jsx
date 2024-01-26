@@ -55,11 +55,11 @@ const Services = () => {
                   </div>
                 </CardHeader>
                 <CardContent className=''>
-                  <CardTitle className="mb-4">{item.title}</CardTitle>
+                  <CardTitle className="mb-4 font-semibold">{item.title}</CardTitle>
                   <CardDescription className='text-base'>{item.description}</CardDescription>
                 </CardContent>
                 <CardFooter className='gap-x-2'>
-                    <Link href='/' className='font-extrabold text-xl'> See Project </Link>
+                    <Link href='/' className='font-semibold text-xl'> See Project </Link>
                     <ArrowRight className='text-primary w-4 font-extrabold animate-in cursor-pointer' />
                 </CardFooter>
               </Card>

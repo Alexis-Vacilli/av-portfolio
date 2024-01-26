@@ -65,7 +65,7 @@
 }
 
 .h1{
-  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-extrabold;
+  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-semibold;
 }
 
 .subtitle{
@@ -73,12 +73,16 @@
 }
 
 .section-title{
-  @apply text-4xl font-extrabold relative w-max flex items-center justify-between uppercase gap-x-3;
+  @apply text-2xl xl:text-4xl font-semibold relative w-max flex items-center justify-between uppercase gap-x-3;
 }
 
 .section-subtitle{
-  @apply text-2xl font-extrabold relative w-max ;
+  @apply text-2xl font-bold relative w-max ;
   
+}
+
+.centered{
+  @apply relative left-1/2 transform -translate-x-1/2  w-11/12
 }
 
 

@@ -69,8 +69,8 @@ const Skills = () => {
               >
                 <CardHeader>
                   <div className="flex justify-between">
-                    <h2 className="text-2xl font-bold">{item.name}</h2>
-                    <p className="text-xl font-extrabold">
+                    <h2 className="text-2xl font-semibold">{item.name}</h2>
+                    <p className="text-xl font-semibold">
                       {item.percentage}
                       <span className="text-primary">%</span>{" "}
                     </p>
