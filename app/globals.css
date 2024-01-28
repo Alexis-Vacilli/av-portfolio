@@ -30,7 +30,7 @@
   }
 
   .dark {
-    --background: 216 17.6% 16.7%;
+    --background: 24 9.8% 10%;
     --foreground: 0 0% 95%;
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
@@ -92,3 +92,17 @@
 .secondary-font{
   font-family: 'Caveat', cursive;
 }
+
+
+  @keyframes arrowAnimation {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-8px);
+    }
+  }
+
+  .animate-arrow {
+    animation: arrowAnimation 2s infinite;
+  }

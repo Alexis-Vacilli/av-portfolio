@@ -17,18 +17,21 @@ const serviceData = [
     title: "UI/IX & Logo Design",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, eius?",
+    
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "iOS & Android",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, eius?",
+    
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
     title: "App Development",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, eius?",
+    
   },
 ];
 
@@ -60,7 +63,7 @@ const Services = () => {
                 </CardContent>
                 <CardFooter className='gap-x-2'>
                     <Link href='/' className='font-semibold text-xl'> See Project </Link>
-                    <ArrowRight className='text-primary w-4 font-extrabold animate-in cursor-pointer' />
+                    <ArrowRight className='text-primary w-4 font-extrabold animate-in cursor-pointer animate-arrow' />
                 </CardFooter>
               </Card>
             );

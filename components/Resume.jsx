@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -64,14 +63,14 @@ const Resume = () => {
           </p>
         </div>
         {/* Section content */}
-        <div className="w-full flex flex-col md:flex-row justify-between">
+        <div className="w-full flex flex-col gap-y-20 md:flex-row justify-between">
           <div className="w-full md:w-1/2 text-center mb-4 md:mb-0">
             <h2 className="w-full text-2xl font-extrabold relative inline-block mb-4">
               Professional Training
-              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-11/12 h-[2px] bg-secondary"></div>
+              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-11/12 h-[2px] bg-foreground dark:bg-muted-foreground"></div>
             </h2>
             <Accordion className='relative'>{training.map((item, index) => {
-              return <AccordionItem key={index} value={`item-${index}`} className='centered text-xl font-semibold border-b-2 border-foreground'>
+              return <AccordionItem key={index} value={`item-${index}`} className='centered text-xl font-semibold border-b-2 border-foreground dark:border-muted-foreground'>
                 <AccordionTrigger className='px-6 py-8'>{item.title}</AccordionTrigger>
                 <AccordionContent>
                   <div className='centered flex justify-between items-center '>
@@ -86,10 +85,10 @@ const Resume = () => {
           <div className="w-full md:w-1/2 text-center">
             <h2 className="w-full text-2xl font-extrabold relative inline-block mb-4">
               Experience
-              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-11/12 h-[2px] bg-secondary"></div>
+              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-11/12 h-[2px] bg-foreground dark:bg-muted-foreground"></div>
             </h2>
             <Accordion className='relative'>{experience.map((item, index) => {
-              return <AccordionItem key={index} value={`item-${index}`} className='centered text-xl font-semibold border-b-2 border-foreground'>
+              return <AccordionItem key={index} value={`item-${index}`} className='centered text-xl font-semibold border-b-2 border-foreground dark:border-muted-foreground'>
                 <AccordionTrigger className='px-6 py-8'>{item.title}</AccordionTrigger>
                 <AccordionContent>
                   <div className='centered flex justify-between items-center '>
