@@ -67,10 +67,10 @@ const Resume = () => {
           <div className="w-full md:w-1/2 text-center mb-4 md:mb-0">
             <h2 className="w-full text-2xl font-extrabold relative inline-block mb-4">
               Professional Training
-              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-11/12 h-[2px] bg-foreground dark:bg-muted-foreground"></div>
+              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-11/12 h-[2px] bg-foreground dark:bg-border"></div>
             </h2>
             <Accordion className='relative'>{training.map((item, index) => {
-              return <AccordionItem key={index} value={`item-${index}`} className='centered text-xl font-semibold border-b-2 border-foreground dark:border-muted-foreground'>
+              return <AccordionItem key={index} value={`item-${index}`} className='centered text-xl font-semibold border-b-2 border-foreground dark:border-border'>
                 <AccordionTrigger className='px-6 py-8'>{item.title}</AccordionTrigger>
                 <AccordionContent>
                   <div className='centered flex justify-between items-center '>
@@ -85,10 +85,10 @@ const Resume = () => {
           <div className="w-full md:w-1/2 text-center">
             <h2 className="w-full text-2xl font-extrabold relative inline-block mb-4">
               Experience
-              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-11/12 h-[2px] bg-foreground dark:bg-muted-foreground"></div>
+              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 w-11/12 h-[2px] bg-foreground dark:bg-border"></div>
             </h2>
             <Accordion className='relative'>{experience.map((item, index) => {
-              return <AccordionItem key={index} value={`item-${index}`} className='centered text-xl font-semibold border-b-2 border-foreground dark:border-muted-foreground'>
+              return <AccordionItem key={index} value={`item-${index}`} className='centered text-xl font-semibold border-b-2 border-foreground dark:border-border'>
                 <AccordionTrigger className='px-6 py-8'>{item.title}</AccordionTrigger>
                 <AccordionContent>
                   <div className='centered flex justify-between items-center '>

@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        header ? "bg-transparent  dark:bg-transparent]" : "dark:bg-transparent"
+        header ? "bg-transparent  dark:bg-transparent" : "dark:bg-transparent"
       } sticky top-0 transition-all z-50`}
     >
       <div className="container mx-auto">

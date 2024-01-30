@@ -1,4 +1,5 @@
 import Blog from "@/components/Blog";
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Resume from "@/components/Resume";
 import Services from "@/components/Services";
@@ -12,8 +13,9 @@ export default function Home() {
         <Services />
         <Skills />
         <Resume />
-        {/* <Work /> */}
+        <Work />
         <Blog />
+        {/* <Contact /> */}
     </main>
   )
 }

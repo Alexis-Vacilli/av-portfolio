@@ -12,50 +12,40 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28">
+    <section className="py-6 xl:py-12 h-[84vh]">
       <div className="container mx-auto">
-        <div className="flex justify-between gap-x-8">
-          {/* text */}
-          <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-5 text-center xl:text-left ">
-            <h1 className="h1 bg-hero bg-right">
-              Hello, my name is Alexis Vacilli
+        <div className="flex flex-col xl:flex-row">
+          {/* Image */}
+          <div className="w-full xl:w-6/12">
+            {/* circle */}
+            <div className="xl:mr-10 w-[300px] h-[300px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px] mx-auto relative overflow-hidden">
+              <div className="absolute inset-0 bg-profile bg-cover rounded-full border-8 border-border dark:border-border/70 right-0"></div>
+            </div>
+          </div>
+          {/* Text */}
+          <div className="w-full xl:w-6/12 p-8 flex flex-col gap-y-1 justify-center text-center xl:text-start">
+            <h4 className="secondary-font text-2xl font-bold">
+              Hello, my name is
+            </h4>
+            <h1 className="h1 bg-hero bg-center xl:bg-left bg-no-repeat">
+              Alexis Vacilli
             </h1>
             <div className="text-sm font-bold mt-4 tracking-[4px] uppercase">
-              I am{" "}
+              I AM{" "}
               <span className="secondary-font text-primary font-bold">
                 Software Developer
               </span>
             </div>
             <p className="mt-4 subtitle max-w-[490px] mx-auto xl:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Provident odio facere vitae similique? Quisquam sapiente quia
-              voluptate blanditiis officia beatae!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              laudantium voluptatem molestias quasi, optio doloremque modi ex
+              veritatis omnis blanditiis?
             </p>
-            {/* Buttons */}
-            {/* <div className='mb-8'>
-              <Button
-                variant="outline"
-                className="gap-x-2 border-2 border-primary text-primary hover:bg-primary hover:text-white"
-              >
-                Download CV
-                <Download size={16} />
-              </Button>
-            </div> */}
-            {/* Socials */}
             <Socials
               containerStyles="flex gap-x-4 mx-auto xl:mx-0"
               iconsStyles="text-foreground text-[25px] hover:text-primary transition-all"
             />
           </div>
-          {/* Image */}
-          <div className="hidden xl:flex relative">
-            <div className="bg-hero_shape_light dark:bg-hero_shape_dark w-[600px] h-[600px] bg-no-repeat absolute -top-28 -right-2"></div>
-            <DevImg containerStyles="" imgSrc="" />
-          </div>
-        </div>
-        {/* icon */}
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12">
-          <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>
     </section>

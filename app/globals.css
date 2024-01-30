@@ -3,7 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 
 @layer base {
   :root {
@@ -50,59 +50,66 @@
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
 
-    
+
   }
 }
 
- 
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-.h1{
-  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-semibold;
+.h1 {
+  @apply text-6xl md:text-6xl xl:text-[78px] xl:leading-[80px] tracking-[-2px] font-semibold whitespace-nowrap;
 }
 
-.subtitle{
+.subtitle {
   @apply text-muted-foreground text-base mb-8 font-normal;
 }
 
-.section-title{
+.section-title {
   @apply text-2xl xl:text-4xl font-semibold relative w-max flex items-center justify-between uppercase gap-x-3;
 }
 
-.section-subtitle{
-  @apply text-2xl font-bold relative w-max ;
-  
+.section-subtitle {
+  @apply text-2xl font-bold relative w-max;
+
 }
 
-.centered{
-  @apply relative left-1/2 transform -translate-x-1/2  w-11/12
+.centered {
+  @apply relative left-1/2 transform -translate-x-1/2 w-11/12
 }
 
 
 
 
 
-.secondary-font{
+.secondary-font {
   font-family: 'Caveat', cursive;
 }
 
 
-  @keyframes arrowAnimation {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-8px);
-    }
+@keyframes arrowAnimation {
+
+  0%,
+  100% {
+    transform: translateX(0);
   }
 
-  .animate-arrow {
-    animation: arrowAnimation 2s infinite;
+  50% {
+    transform: translateX(-1px);
   }
+}
+
+.animate-arrow {
+  animation: arrowAnimation 2s infinite;
+}
+
+
+

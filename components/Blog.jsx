@@ -39,7 +39,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <section className="py-12 xl:py-24 mb-12 xl:mb-36">
+    <section className="py-12 xl:py-24">
       <div className="container mx-auto">
         {/* Title */}
         <div className="mb-12 xl:mb-24">

@@ -8,11 +8,10 @@ const links = [
   { path: "/", name: "home" },
   { path: "/services", name: "services" },
   { path: "/skills", name: "skills" },
-  { path: "/works", name: "works" },
-  { path: "/projects", name: "projects" },
-  { path: "/testimonials", name: "testimonials" },
-  { path: "/contact", name: "contact" },
+  { path: "/resume", name: "resume" },
+  { path: "/work", name: "work" },
   { path: "/blog", name: "blog" },
+  { path: "/contact", name: "contact" }
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {

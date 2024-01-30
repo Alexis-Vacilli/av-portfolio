@@ -8,29 +8,27 @@ import {
 } from "./ui/card";
 import { Badge } from "./ui/badge";
 
-import Image from "next/image";
+import Link from "next/link";
+
+import { ArrowRight } from "lucide-react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card className='bg-background'>
-      <CardHeader>
-        <div className='relative w-full h-[250px]'>
-          <Image
-            src={project.image}
-            className="absolute bottom-0 shadow-2xl rounded-lg"
-            width={247}
-            height={230}
-            alt={project.name}
-          />
-        </div>
-      </CardHeader>
-      <div className="h-full px-8 py-6">
-        <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
+    <Card className="bg-background">
+      <CardContent className="h-full px-8 py-6">
+        <Badge className="uppercase text-sm font-medium mb-2 absolute top-6 right-5">
           {project.category}
         </Badge>
-        <h4 className="mb-1 text-xl font-semibold">{project.name}</h4>
-        <p className='text-muted-foreground text-base'>{project.description}</p>
-      </div>
+        <p className="mb-1 text-xl font-semibold">{project.name}</p>
+        <CardDescription className="text-muted-foreground text-base mb-10">{project.description}</CardDescription>
+      </CardContent>
+      <CardFooter className='flex space-x-2'>
+        <Link href="/" className="font-semibold text-sm">
+          {" "}
+          View Project{" "}
+        </Link>
+        <ArrowRight className="text-primary w-4 font-extrabold animate-in cursor-pointer animate-arrow" />
+      </CardFooter>
     </Card>
   );
 };

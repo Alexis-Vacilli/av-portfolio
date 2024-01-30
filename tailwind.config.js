@@ -72,7 +72,11 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
+        logo_light: 'url(/assets/Header/logo-light.png)',
+        logo_dark: 'url(/assets/Header/logo-dark.png)',
+        profile: 'url(/assets/Hero/Profile.jpg)',
         hero: 'url(/assets/Hero/bg3.png)',
+        hero1: 'url(/assets/Hero/bg1.png)',
         hero_shape_light: 'url(/assets/Hero/shape-light.png)',
         hero_shape_dark: 'url(/assets/Hero/shape-dark.png)',
         bg_dot_light: 'url(/assets/eclipse.png)',

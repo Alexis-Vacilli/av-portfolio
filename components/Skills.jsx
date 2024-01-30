@@ -81,7 +81,7 @@ const Skills = () => {
                     {item.description}
                   </CardDescription>
                 </CardContent>
-                <div className="w-full bg-gray-300 h-[3px] dark:bg-gray-700">
+                <div className="w-full bg-gray-300 h-[3px] dark:bg-border">
                     {/* bg-bg_dot_light bg-right bg-no-repeat */}
                   <div
                     className="bg-foreground dark:bg-primary h-[3px]"

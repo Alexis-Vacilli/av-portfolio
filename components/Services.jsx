@@ -37,7 +37,7 @@ const serviceData = [
 
 const Services = () => {
   return (
-    <section className="py-12 xl:py-24 ">
+    <section className="py-12 xl:py-24">
       <div className="container mx-auto">
         <div className="mb-12 xl:mb-24">
           <h2 className="section-title text-center mx-auto">What I do</h2>
@@ -62,7 +62,7 @@ const Services = () => {
                   <CardDescription className='text-base'>{item.description}</CardDescription>
                 </CardContent>
                 <CardFooter className='gap-x-2'>
-                    <Link href='/' className='font-semibold text-xl'> See Project </Link>
+                    <Link href='/' className='font-semibold text-lg'> See Project </Link>
                     <ArrowRight className='text-primary w-4 font-extrabold animate-in cursor-pointer animate-arrow' />
                 </CardFooter>
               </Card>
