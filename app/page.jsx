@@ -15,7 +15,7 @@ export default function Home() {
         <Resume />
         <Work />
         <Blog />
-        {/* <Contact /> */}
+        <Contact />
     </main>
   )
 }
