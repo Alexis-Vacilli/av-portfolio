@@ -1,5 +1,11 @@
 'use client';
 import { Map, Mail, BookUser } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 const Contact = () => {
   return (
