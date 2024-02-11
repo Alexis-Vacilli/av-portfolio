@@ -1,3 +1,4 @@
+"use client"
 import { Paintbrush, Blocks, Gem, ArrowRight  } from "lucide-react";
 import {
   Card,
@@ -7,6 +8,8 @@ import {
   CardTitle,
   CardFooter
 } from "@/components/ui/card";
+
+import {motion} from 'framer-motion';
 
 // next
 import Link from 'next/link'
@@ -37,7 +40,8 @@ const serviceData = [
 
 const Services = () => {
   return (
-    <section className="py-12 xl:py-24">
+    <motion.section id="services" className="py-12 xl:py-24" whileInView={{ y: [50, 0], opacity: [0, 1] }}
+    transition={{ duration: 1 }}>
       <div className="container mx-auto">
         <div className="mb-12 xl:mb-24">
           <h2 className="section-title text-center mx-auto">What I do</h2>
@@ -70,7 +74,7 @@ const Services = () => {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

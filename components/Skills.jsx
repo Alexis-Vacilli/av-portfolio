@@ -1,3 +1,4 @@
+"use client"
 import {
   Card,
   CardContent,
@@ -6,6 +7,8 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
+
+import { motion } from "framer-motion";
 
 const skillsData = [
   {
@@ -45,9 +48,12 @@ const skillsData = [
   },
 ];
 
+
+
 const Skills = () => {
   return (
-    <section className="py-12 xl:py-24">
+    <motion.section id="skills" className="py-12 xl:py-24" whileInView={{ y: [50, 0], opacity: [0, 1] }}
+    transition={{ duration: 1 }} >
       {/* Container */}
       <div className="container mx-auto">
         {/* Tiles */}
@@ -93,7 +99,7 @@ const Skills = () => {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

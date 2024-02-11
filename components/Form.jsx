@@ -5,7 +5,7 @@ import { Textarea } from "./ui/textarea";
 import {User, MailIcon, ArrowRightIcon, MessageSquare} from 'lucide-react'
 
 const Form = () => {
-  return <form className='flex flex-col gap-y-7'>
+  return <form className='flex flex-col gap-y-5 border border-input p-5 rounded-sm'>
     <div className='relative flex items-center'>
       <Input type='name' id='name' placeholder='Name' />
       <User className='absolute right-6' size={20} />
@@ -18,7 +18,7 @@ const Form = () => {
       <Textarea type='message' id='message' placeholder='Message' />
       <MessageSquare className='absolute right-6 top-4' size={20} />
     </div>
-    <Button className='flex items-center max-w-[166px] '>Let's Talk</Button>
+    <Button className='flex items-center max-w-[146px] py-3 rounded-sm'>Let's Talk</Button>
   </form>
 };
 

@@ -1,3 +1,4 @@
+"use client"
 import { ArrowRight } from "lucide-react";
 import {
   Card,
@@ -11,6 +12,8 @@ import {
 // Next
 import Link from "next/link";
 import Image from "next/image";
+
+import {motion} from 'framer-motion'
 
 
 const blogData = [
@@ -39,7 +42,8 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <section className="py-12 xl:py-24">
+    <motion.section id="blog" className="py-12 xl:py-24" whileInView={{ y: [50, 0], opacity: [0, 1] }}
+    transition={{ duration: 1 }}>
       <div className="container mx-auto">
         {/* Title */}
         <div className="mb-12 xl:mb-24">
@@ -90,7 +94,7 @@ const Blog = () => {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

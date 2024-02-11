@@ -21,7 +21,7 @@ const AccordionTrigger = React.forwardRef(({ className, children, ...props }, re
         "flex flex-1 items-center justify-between py-4 transition-all [&[data-state=open]>svg]:rotate-180",
         className
       )}
-      {...props}>
+      {...props}> 
       {children}
       <ChevronDown className="h-6 w-6 shrink-0 transition-transform duration-200" />
     </AccordionPrimitive.Trigger>

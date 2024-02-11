@@ -7,11 +7,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Form from "./Form";
-import Socials from "./ui/Socials";
+import {motion} from 'framer-motion'
 
 const Contact = () => {
   return (
-    <section className="py-12 xl:py-24">
+    <motion.section id="contact" className="py-12 xl:py-24" whileInView={{ y: [50, 0], opacity: [0, 1] }}
+    transition={{ duration: 1 }}>
       <div className="container mx-auto">
         {/* Title */}
         <div className="mb-12 xl:mb-24">
@@ -23,11 +24,11 @@ const Contact = () => {
         {/* Content */}
         <div className="w-full flex flex-col gap-x-5 gap-y-20 md:flex-row justify-between">
           {/* Accordions */}
-          <div className="w-full md:w-1/2 text-center mb-4 md:mb-0">
+          <div className="w-full md:w-1/2 text-center mb-4 md:mb-0 border border-input p-5 rounded-sm">
             <Accordion className="flex flex-col gap-y-1">
               <AccordionItem
                 value="item-1"
-                className="bg-background  border-b-0 shadow-md"
+                className="bg-background  border-b-0 shadow-sm border border-input"
               >
                 <AccordionTrigger className="text-xl font-semibold px-6 py-6">
                   Working days
@@ -43,7 +44,7 @@ const Contact = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-2"
-                className="bg-background border-b-0 shadow-md"
+                className="bg-background border-b-0 shadow-sm border border-input"
               >
                 <AccordionTrigger className="text-xl font-semibold px-6 py-6">
                   Social Profiles
@@ -57,7 +58,7 @@ const Contact = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-3"
-                className="bg-background border-b-0 shadow-md"
+                className="bg-background border-b-0 shadow-sm border border-input"
               >
                 <AccordionTrigger className="text-xl font-semibold px-6 py-6">
                   Contacts
@@ -78,7 +79,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

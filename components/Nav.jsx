@@ -5,13 +5,13 @@ import {motion} from "framer-motion"
 import { usePathname } from "next/navigation";
 
 const links = [
-  { path: "/", name: "home" },
-  { path: "/services", name: "services" },
-  { path: "/skills", name: "skills" },
-  { path: "/resume", name: "resume" },
-  { path: "/work", name: "work" },
-  { path: "/blog", name: "blog" },
-  { path: "/contact", name: "contact" }
+  { path: "/", name: "home", sectionId: "" },
+  { path: "/services", name: "services", sectionId: "services" },
+  { path: "/skills", name: "skills", sectionId: "skills" },
+  { path: "/resume", name: "resume", sectionId: "resume" },
+  { path: "/work", name: "work", sectionId: "work" },
+  { path: "/blog", name: "blog", sectionId: "blog" },
+  { path: "/contact", name: "contact", sectionId: "contact" }
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
@@ -21,7 +21,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
       {links.map((link, index) => {
         return (
           <Link
-            href={link.path}
+            href={`#${link.sectionId}`}
             key={index}
             className={`capitalize ${linkStyles}`}
           >

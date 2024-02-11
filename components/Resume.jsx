@@ -1,9 +1,13 @@
+"use client"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
+import { motion } from "framer-motion";
+
 
 const experience = [
   {
@@ -55,7 +59,8 @@ const training = [
 
 const Resume = () => {
   return (
-    <section className="py-12 xl:py-24">
+    <motion.section id="resume" className="py-12 xl:py-24" whileInView={{ y: [50, 0], opacity: [0, 1] }}
+    transition={{ duration: 1 }}>
       <div className="container mx-auto">
         {/* Title */}
         <div className="mb-12 xl:mb-24">
@@ -132,7 +137,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

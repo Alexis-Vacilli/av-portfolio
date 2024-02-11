@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "./ui/tabs";
 
+import {motion} from 'framer-motion';
+
 // Components
 import ProjectCard from "./ProjectCard";
 
@@ -50,7 +52,8 @@ const Work = () => {
   })
 
   return (
-    <section className="py-12 xl:py-24">
+    <motion.section id="work" className="py-12 xl:py-24" whileInView={{ y: [50, 0], opacity: [0, 1] }}
+    transition={{ duration: 1 }}>
       <div className="container mx-auto">
         {/* Title */}
         <div className="mb-12 xl:mb-24">
@@ -79,7 +82,7 @@ const Work = () => {
           </div>
         </Tabs>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
