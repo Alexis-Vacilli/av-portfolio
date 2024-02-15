@@ -5,13 +5,8 @@ import ThemeToggler from "./ThemeToggler";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { FaCaretDown } from "react-icons/fa";
+
+import LanSwitcher from "./LanSwitcher";
 
 const Header = () => {
   const [header, setHeader] = useState(false);
@@ -32,23 +27,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Logo />
           <div className="flex items-center gap-x-6">
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-2 px-1 border border-input dark:border-border rounded bg-background">
-                <span>🇫🇷</span>
-                <span>FR</span>
-                <FaCaretDown />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem className="flex space-x-4 items-center">
-                  <span>🇫🇷</span>
-                  <span>Français</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="flex space-x-4 items-center">
-                  <span>🇺🇸</span>
-                  <span>English</span>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <LanSwitcher />
             <ThemeToggler />
             {/* Mobile Nav */}
             <div>

@@ -5,8 +5,9 @@ import {
   RiTwitterXFill,
   RiGithubFill,
   RiDribbbleFill,
-  RiLinkedinFill,
 } from "react-icons/ri";
+import { MdOutlineArticle } from "react-icons/md";
+import { PiFigmaLogoLight } from "react-icons/pi";
 import Link from "next/link";
 
 // Icon links
@@ -22,7 +23,11 @@ const icons = [
   },
   {
     path: "/",
-    name: <RiDribbbleFill />,
+    name: <PiFigmaLogoLight />,
+  },
+  {
+    path: "/",
+    name: <MdOutlineArticle />,
   }
 ];
 

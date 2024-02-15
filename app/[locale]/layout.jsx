@@ -12,6 +12,7 @@ import { Caveat, Jost } from "next/font/google";
 // Themes Provider
 import { ThemeProvider } from "@/components/ThemeProvider";
 
+
 const jost = Jost({
   weight: ['100', '200', '400', '600', '700', '800'],
   subsets: ['latin']

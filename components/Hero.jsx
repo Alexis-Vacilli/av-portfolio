@@ -1,14 +1,5 @@
 // Components
-import DevImg from "./ui/DevImg";
-import Ba from "./ui/Ba";
 import Socials from "./ui/Socials";
-
-// Icons
-import { RiArrowDownSLine } from "react-icons/ri";
-import { Download } from "lucide-react";
-
-// Shadcn
-import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -42,8 +33,8 @@ const Hero = () => {
               veritatis omnis blanditiis?
             </p>
             <Socials
-              containerStyles="flex gap-x-4 mx-auto xl:mx-0"
-              iconsStyles="text-foreground text-[25px] hover:text-primary transition-all"
+              containerStyles="flex gap-x-2 mx-auto xl:mx-0"
+              iconsStyles="text-foreground text-[25px] hover:text-primary transition-all border border-input p-1 rounded-full"
             />
           </div>
         </div>
