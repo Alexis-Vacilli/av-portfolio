@@ -25,8 +25,8 @@ const Header = () => {
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <Logo />
-          <div className="flex items-center gap-x-6">
+            <Logo />
+          <div className="flex items-center gap-x-5">
             <LanSwitcher />
             <ThemeToggler />
             {/* Mobile Nav */}

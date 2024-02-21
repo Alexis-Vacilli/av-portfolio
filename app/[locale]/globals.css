@@ -86,7 +86,9 @@
   @apply relative left-1/2 transform -translate-x-1/2 w-11/12
 }
 
-
+.link{
+  @apply text-foreground font-light hover:text-primary hover:underline
+}
 
 
 

@@ -19,7 +19,7 @@ const Logo = () => {
         height={110}
         priority
         alt="logo"
-        className="scale-150 "
+        className="scale-150"
       />
     </Link>
   );
