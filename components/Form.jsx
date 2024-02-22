@@ -18,7 +18,7 @@ const Form = () => {
       <Textarea type='message' id='message' placeholder='Message' />
       <MessageSquare className='absolute right-6 top-4' size={20} />
     </div>
-    <Button className='flex items-center max-w-[146px] py-3 rounded-sm'>Let's Talk</Button>
+    <Button className='flex items-center max-w-[146px] py-3 rounded-sm text-foreground font-semibold bg-background dark:bg-background border-2 border-input hover:bg-accent dark:hover:bg-accent '>Let's Talk</Button>
   </form>
 };
 

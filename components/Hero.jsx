@@ -1,5 +1,6 @@
 // Components
 import Socials from "./ui/Socials";
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -28,9 +29,7 @@ const Hero = () => {
               </span>
             </div>
             <p className="mt-4 subtitle max-w-[490px] mx-auto xl:mx-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              laudantium voluptatem molestias quasi, optio doloremque modi ex
-              veritatis omnis blanditiis?
+            Hey there, I'm Alexis! By day, I'm all about coding, but when I've got some free time, I like to write about everyday stuff like social life and politics. Swing by my <Link href='/' className='text-primary underline'>blog </Link>sometime and let's chat about what makes the world tick
             </p>
             <Socials
               containerStyles="flex gap-x-2 mx-auto xl:mx-0"
