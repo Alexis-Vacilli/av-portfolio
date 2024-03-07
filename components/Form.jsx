@@ -5,7 +5,7 @@ import { Textarea } from "./ui/textarea";
 import {User, MailIcon, ArrowRightIcon, MessageSquare} from 'lucide-react'
 
 const Form = () => {
-  return <form className='flex flex-col gap-y-5 border border-input p-5 rounded-sm'>
+  return <form className='flex flex-col gap-y-5  p-5 rounded-sm'>
     <div className='relative flex items-center'>
       <Input type='name' id='name' placeholder='Name' />
       <User className='absolute right-6' size={20} />

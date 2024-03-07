@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { PortableText } from "@portabletext/react";
 
-const Post = ({ post }) => {
+const Blog = ({ post }) => {
   return (
     <Card className="flex flex-col md:flex-row group overflow-hidden bg-backgound shadow-sm dark:shadow-sm dark:shadow-input  border border-input">
       <div className="flex flex-col justify-between md:w-1/2">
@@ -25,7 +25,7 @@ const Post = ({ post }) => {
           </CardDescription>
           <div className="flex gap-x-2 items-center py-2">
             <Link
-              href={`/posts/${post.slug.current}`}
+              href={`/blog/${post.slug.current}`}
               className="font-semibold text-lg"
             >
               {" "}
@@ -48,4 +48,4 @@ const Post = ({ post }) => {
   );
 };
 
-export default Post;
+export default Blog;

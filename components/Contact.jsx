@@ -24,7 +24,7 @@ const Contact = () => {
         {/* Content */}
         <div className="w-full flex flex-col gap-x-5 gap-y-20 md:flex-row justify-between">
           {/* Accordions */}
-          <div className="w-full md:w-1/2 text-center mb-4 md:mb-0 border border-input p-5 rounded-sm">
+          <div className="w-full md:w-1/2 text-center mb-4 md:mb-0 p-5 rounded-sm">
             <Accordion className="flex flex-col gap-y-1">
               <AccordionItem
                 value="item-1"

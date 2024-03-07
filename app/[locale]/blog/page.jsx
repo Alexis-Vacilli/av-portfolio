@@ -1,5 +1,5 @@
 import About from "@/components/Blog/About";
-import Post from "@/components/Blog/Post";
+import Post from "@/components/Blog/Blog";
 import { client } from "@/lib/sanity";
 
 async function getPosts() {
@@ -19,9 +19,8 @@ async function getPosts() {
 
 const page = async () => {
   const posts = await getPosts();
-  console.log(posts);
   return (
-    <section className="py-12 xl:py-16 ">
+    <section className="py-8 xl:py-16 ">
       <div className="container mx-auto">
         <div className="w-full flex flex-col gap-x-7 gap-y-10 md:flex-row justify-between">
           <div className='w-full flex flex-col gap-y-4'>

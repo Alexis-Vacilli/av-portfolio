@@ -66,7 +66,7 @@
 }
 
 .h1 {
-  @apply text-6xl md:text-6xl xl:text-[78px] xl:leading-[80px] tracking-[-2px] font-semibold whitespace-nowrap;
+  @apply text-6xl md:text-6xl xl:text-[78px] xl:leading-[80px] tracking-[-5px] font-semibold;
 }
 
 .subtitle {
@@ -95,6 +95,8 @@
 .secondary-font {
   font-family: 'Caveat', cursive;
 }
+
+
 
 
 @keyframes arrowAnimation {
