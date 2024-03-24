@@ -8,7 +8,7 @@ import { Send, File } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24  h-[84vh] mb-12">
+    <section className="py-12 xl:py-24 h-[84vh]">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 xl:flex-row">
           {/* image */}

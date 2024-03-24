@@ -1,4 +1,4 @@
-import BlogCard from "./BlogCard";
+import BlogCard from "./Cardlist";
 import { client } from "@/lib/sanity";
 
 // Fetching data

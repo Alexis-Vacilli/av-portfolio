@@ -1,17 +1,24 @@
+import Image from "next/image";
+import Link from "next/link";
 
-const Categories = ({ containerStyles }) => {
+const Categories = () => {
   return (
-    <div className={`${containerStyles}`}>
-      <div className="relative">
-        <h2 className="text-lg uppercase font-semibold">Categories</h2>
-        <span className="absolute left-0 top-full h-[5px] bg-primary w-[40px]"></span>
+    <div className="container mx-auto">
+      <h1 className='text-3xl font-semibold my-[50px]'>Popular Categories</h1>
+      <div className="flex flex-wrap gap-2">
+        <Link href="" className="capitalise xl:w-[10%] w-[23%] h-[20px] flex items-center justify-center rounded-sm bg-[#57c4ff31] p-3">
+          Social
+        </Link>
+        <Link href="" className="capitalise xl:w-[10%] w-[23%] h-[20px] flex items-center justify-center rounded-sm bg-[#da85c731] p-3">
+          Politics
+        </Link>
+        <Link href="" className="capitalise xl:w-[10%] w-[23%] h-[20px] flex items-center justify-center rounded-sm bg-[#7fb88133] p-3">
+          Sports
+        </Link>
+        <Link href="" className="capitalise xl:w-[10%] w-[23%] h-[20px] flex items-center justify-center rounded-sm bg-[#ff795736] p-3 ">
+          Tech
+        </Link>
       </div>
-      <ul className="mt-8 flex flex-col gap-y-3 font-normal">
-        <li>Social</li>
-        <li>Politics</li>
-        <li>Sports</li>
-        <li>Profession</li>
-      </ul>
     </div>
   );
 };
