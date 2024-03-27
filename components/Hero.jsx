@@ -8,7 +8,7 @@ import { Send, File } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh]">
+    <section className="py-12 xl:py-24 xl:[84vh] h-[100vh]">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 xl:flex-row">
           {/* image */}
@@ -23,11 +23,9 @@ const Hero = () => {
             <div className="text-2xl mb-4 secondary-font tracking-[-1px] text-primary">
               Software Developer
             </div>
-            <h1 className="h1 mb-5">Hello, my name is Alexis Vacilli</h1>
+            <h1 className="h1 mb-5">Work in progress...</h1>
             <p className="text-base text-muted-foreground mb-8 font-light max-w-[490px] mx-auto xl:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt
-              excepturi blanditiis, laudantium perferendis placeat cumque
-              eveniet natus optio tenetur.
+            This website is currently under reconstruction. We are working diligently to enhance your browsing experience and bring you fresh, exciting content. Thank you for your patience as we revamp our site to better serve you. Stay tuned for the unveiling of our new and improved features!
             </p>
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
               <Link href='/'>

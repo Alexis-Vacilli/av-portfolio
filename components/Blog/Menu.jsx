@@ -22,7 +22,7 @@ const Menu = () => {
           <div className="flex-4 flex flex-col">
               <span className="px-2 rounded-sm text-[12px] bg-[#57c4ff31]" style={{width: 'max-content'}}>Sport</span>
               <h3 className='text-[18px] font-semibold'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, hic!</h3>
-              <div className="text-[12px] ">
+              <div className="text-[12px]">
                   <span className='username'>Alexis Vacilli - </span>
                   <span className='text-foreground/50'>January, 12 2024 </span>
               </div>
