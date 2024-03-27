@@ -25,7 +25,7 @@ const Hero = () => {
             </div>
             <h1 className="h1 mb-5">Work in progress...</h1>
             <p className="text-base text-muted-foreground mb-8 font-light max-w-[490px] mx-auto xl:mx-0">
-            This website is currently under reconstruction. We are working diligently to enhance your browsing experience and bring you fresh, exciting content. Thank you for your patience as we revamp our site to better serve you. Stay tuned for the unveiling of our new and improved features!
+            Hey there! Just wanted to let you know that this website is currently undergoing some changes. Stay tuned for the updates and improvements. Thanks for your understanding and patience!
             </p>
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
               <Link href='/'>
